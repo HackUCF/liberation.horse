@@ -28,14 +28,14 @@
       }
       main
       {
-        background: #ff3131;
+        /*background: #ff3131;*/
+        background: #dd2222;
         height: 100%;
         padding-left: 30px;
         padding-right: 30px;
         margin-left: 5%;
         margin-right: 5%;
         font-size: 120%;
-
       }
       img {
         margin: auto;
@@ -52,6 +52,8 @@
       {
         display: block;
         text-align: center;
+        margin-bottom: 0;
+        border-bottom: none;
       }
        nav ul{
         display: flex;
@@ -87,9 +89,26 @@
       }
       #current
       {
-        background: #ff3131;
+        /* background: #ff3131; */
+        background: #dd2222;
         border-bottom: none;
       }
+
+      div.imageholder
+      {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        border-bottom: none;
+      }
+
+      div.imageholder img
+      {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       section.row
       {
         display: flex;
@@ -103,18 +122,24 @@
         border-bottom: 1px solid black;
       }
 
-      section.row .left, section.row .right
+      section.row .third
       {
-        width: 50%;
+        width: 33%;
         margin: none;
         border: 1px solid black;
+        border-left: none;
         padding-left: 10px;
         padding-right: 10px;
       }
-
-      section.row .right
+      
+      section.row .first
       {
-        border-left: none;
+        border-left: 1px solid black;
+      }
+      footer
+      {
+        padding: 30px;
+        text-align: center;
       }
     </style>
   </head>
@@ -128,13 +153,12 @@
       </ul>
     </nav>
     <main>
-      <h1>
-        The Horse 
-        <img src="HLF.gif" alt="A image with a pixelated logo of the Horse Liberation Front, with scanlines and light glitch effects"/>  
-        Liberation Front 
-      </h1>
+      <h1>The Horse Liberation Front</h1>
+      <div class="imageholder">
+        <img id="hlf_gif" src="HLF.gif" alt="A image with a pixelated logo of the Horse Liberation Front, with scanlines and light glitch effects"/>   -->
+      </div>
       <section class="row">
-        <article class="left">
+        <article class="third first">
           <h2>free da horses</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lobortis feugiat leo sit amet dapibus. Pellentesque auctor blandit gravida. Maecenas fermentum elit vitae tortor eleifend, vel bibendum ex aliquam. Donec blandit interdum mauris in egestas. Ut bibendum malesuada tellus in dignissim. Phasellus nec euismod velit. Sed neque ex, pulvinar quis ante sit amet, facilisis ultricies nisl. Sed hendrerit eleifend purus sit amet viverra.
@@ -152,10 +176,18 @@
           Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas egestas eleifend arcu, dignissim pretium sapien condimentum vitae. Aliquam blandit varius cursus. Suspendisse eu ex eget purus aliquam sodales. Quisque tempor imperdiet diam at rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc auctor iaculis pharetra. 
           </p>
         </article>
-        <article class="right">
+        <article class="third">
           <h2>fuck the ihpl</h2>
+          <p>yeah fuck those guys honestly</p>
+        </article>
+        <article class="third">
+          <h2>JOIN THE MOVEMENT</h2>
+          <p>get involved join the movement END HORSE PLINKO NOW</p>
         </article>
       </section>
+      <footer>
+        &copy; Horse Liberation Front, 2023
+      </footer>
     </main>
   </body>
   </html>
