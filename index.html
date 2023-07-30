@@ -13,18 +13,105 @@
       html, body { margin: 0; }
       html {
         min-height: 100vh;
+        background: url("./dangers.jpg");
+        box-sizing: border-box;
+      }
+      html *
+      {
+        box-sizing: inherit;
       }
       body {
         display: flex;
+        flex-direction: column;
         min-height: 100vh;
-        background: #d7d7d7;
+        /*background: #d7d7d7;*/
+      }
+      main
+      {
+        background: #ff3131;
+        height: 100%;
+        padding-left: 30px;
+        margin-left: 5%;
+        margin-right: 5%;
+
       }
       img {
         margin: auto;
+        width: 200px;
+      }
+
+      h1, h2, h3, h4, h5
+      {
+        padding: 10px;
+        border: 1px solid black;
+      }
+
+      main h1
+      {
+        display: inline-block;
+      }
+       nav ul{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+      }
+      nav 
+      {
+        margin-left: auto;
+        margin-right: 5%;
+        margin-bottom: 0;
+      }
+      nav ul li 
+      {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        background: black;
+        color: white !important;
+        border-radius: 10px 10px 0px 0px;
+      }
+      nav ul li a
+      {
+        color: blue;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:end;
+      }
+      #current
+      {
+        background: #ff3131;
+        border-bottom: none;
       }
     </style>
   </head>
   <body>
-    <img src="HLF.gif" alt="A image with a pixelated logo of the Horse Liberation Front, with scanlines and light glitch effects"/>
+    <nav>
+      <ul>
+        <li id="current">home page</li>
+        <li><a href="about">about us</a></li>
+        <li><a href="blog">blog</a></li>
+        <li><a href="https://forms.gle/AAGo9PHSbmUw7Rq99">get involved</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>
+        The Horse 
+        <img src="HLF.gif" alt="A image with a pixelated logo of the Horse Liberation Front, with scanlines and light glitch effects"/>  
+        Liberation Front 
+      </h1>
+      <section>
+      <article class="left">
+
+      </article>
+      <article class="right">
+
+      </article>
+      </section>
+    </main>
   </body>
-</html>
+  </html>
