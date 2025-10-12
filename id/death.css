@@ -1,0 +1,122 @@
+.death-container1 {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: 489px 489px;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+ 
+.death-image1 {
+  width: 200px;
+  object-fit: cover;
+}
+ 
+.death-link1 {
+  display: contents;
+}
+ 
+.death-text3 {
+  text-decoration: none;
+}
+ 
+.death-image2 {
+  width: 200px;
+  object-fit: cover;
+}
+ 
+.death-link2 {
+  display: contents;
+}
+ 
+.death-container2 {
+  right: 50px;
+  border: 1px solid #ffffff5c;
+  bottom: 30px;
+  display: flex;
+  z-index: 22;
+  position: fixed;
+  box-shadow: 5px 5px 10px 0px rgba(31, 31, 31, 0.4);
+  min-height: auto;
+  align-items: center;
+  padding-top: 8px;
+  padding-left: 12px;
+  border-radius: 8px;
+  padding-right: 12px;
+  padding-bottom: 8px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(41, 41, 41, 0.41);
+}
+ 
+.death-icon4 {
+  width: 24px;
+  margin-right: 4px;
+}
+ 
+.death-text4 {
+  color: white;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+ 
+@media(max-width: 479px) {
+  .death-container1 {
+    background-size: cover;
+    background-image: url("public/hlf-background.svg");
+  }
+  .death-icon1 {
+    top: 69px;
+    fill: #A33C3C;
+    left: 2px;
+    color: #c33e3e;
+    width: 108px;
+    height: 127px;
+    position: fixed;
+  }
+  .death-text1 {
+    top: 106px;
+    fill: #C33E3E;
+    color: #C33E3E;
+    right: -2px;
+    width: 392px;
+    position: fixed;
+    margin-left: 0px;
+    font-family: Metropolis-Black;
+  }
+  .death-text2 {
+    top: 305px;
+    left: 54px;
+    color: #713535;
+    position: fixed;
+    font-family: Metropolis-Black;
+  }
+  .death-image1 {
+    top: 361px;
+    left: 47px;
+    width: 389px;
+    height: 237px;
+    position: fixed;
+  }
+  .death-text3 {
+    left: 26px;
+    color: rgb(195, 62, 62);
+    bottom: 54px;
+    z-index: 2;
+    position: fixed;
+    text-decoration: none;
+    font-family: Metropolis-Black;
+  }
+  .death-image2 {
+    left: 97px;
+    width: 302px;
+    bottom: 96px;
+    height: 152px;
+    z-index: 2;
+    position: fixed;
+  }
+}
